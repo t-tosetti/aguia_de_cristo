@@ -1,0 +1,36 @@
+[   
+    {
+     "ID": "Pastores",
+     "Pastor1": "Paulo Durvanier Moreira Filho",
+     "Telefone": "(11) 98352-3196",
+    },
+    {
+     "ID": "Pastores",
+     "Pastor2": "Angela Cardoso Moreira",
+     "Telefone": "(11) 98331-4567",
+    },
+    {
+    "ID":"Culltos",
+    "Nome": "Culto Dominical",
+    "Horario": "9h",
+    "Dia": "Domingo"
+    },
+    {
+    "ID":"Culltos",
+    "Nome": "Reunião de Oração",
+    "Horario": "19h30",
+    "Dia": "Sexta-Feira"
+    },
+    {
+    "ID":"Culltos",
+    "Nome": "Culto de Jovens",
+    "Horario": "18h",
+    "Dia": "Sábado"
+    },
+    {
+    "ID": "Contatos",
+    "telefone": "(11) 2404-4951",
+    "email": "",
+    "endereco": "Rua José Caldeira, 41 - Vila Barros - Guarulhos/SP"
+    }
+]

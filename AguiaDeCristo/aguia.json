@@ -1,0 +1,32 @@
+[   
+    {
+     "ID": "Pastores",
+     "infoa": "_______________",
+     "info1": "Paulo Durvanier Moreira Filho",
+     "info2": "(11) 98352-3196",
+     "info3": "paulo@aguiadecristo.org.br",
+     "info4": "Angela Cardoso Moreira",
+     "info5": "(11) 98331-4567",
+     "info6": "angela@aguiadecristo.org.br"
+    },
+    {
+    "ID":"Cultos",
+    "infoa": "_______________",
+    "infob": "_______________",
+    "info1": "Culto Dominical",
+    "info2": "Domingo",
+    "info3": "9h",
+    "info4": "Reunião de Oração",
+    "info5": "Sexta-Feira",
+    "info6": "19h30",
+    "info7": "Culto de Jovens",
+    "info8": "Sábado",
+    "info9": "18h"
+    },
+    {
+    "ID": "Contatos",
+    "info1": "(11) 2404-4951",
+    "info2": "secretaria@aguiadecristo.org.br",
+    "info3": "Rua José Caldeira, 41 - Guarulhos/SP"
+    }
+]
