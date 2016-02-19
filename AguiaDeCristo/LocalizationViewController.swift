@@ -131,6 +131,13 @@ class LocalizationViewController: UIViewController {
             }
             
         }
+
+        var user: CLLocationCoordinate2D {
+            return mapView.userLocation.coordinate
+        }
+        
+    
+        centralizarNaCoordenada(user)
         
     }
     
