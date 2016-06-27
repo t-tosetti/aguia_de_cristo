@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		673FF0CD1C6BAB4A0096769D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673FF0CC1C6BAB490096769D /* MapKit.framework */; };
 		673FF0CF1C6BAD380096769D /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673FF0CE1C6BAD380096769D /* FaceViewController.swift */; };
 		673FF0D11C6BAD450096769D /* LocalizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673FF0D01C6BAD450096769D /* LocalizationViewController.swift */; };
 		673FF0D31C6BBC720096769D /* AguiaAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673FF0D21C6BBC720096769D /* AguiaAnnotation.swift */; };
@@ -23,7 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		673FF0CC1C6BAB490096769D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		673FF0CE1C6BAD380096769D /* FaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 		673FF0D01C6BAD450096769D /* LocalizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationViewController.swift; sourceTree = "<group>"; };
 		673FF0D21C6BBC720096769D /* AguiaAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AguiaAnnotation.swift; sourceTree = "<group>"; };
@@ -45,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				673FF0CD1C6BAB4A0096769D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +71,6 @@
 		679D68F01C693F1E00D6FF95 = {
 			isa = PBXGroup;
 			children = (
-				673FF0CC1C6BAB490096769D /* MapKit.framework */,
 				679D68FB1C693F1F00D6FF95 /* AguiaDeCristo */,
 				679D68FA1C693F1E00D6FF95 /* Products */,
 			);
@@ -133,14 +129,17 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = tDesign;
+				ORGANIZATIONNAME = "Thiago Tosetti Lopes";
 				TargetAttributes = {
 					679D68F81C693F1E00D6FF95 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 73CDM9NDC9;
 						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
 							com.apple.Maps.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -233,6 +232,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -277,6 +277,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -302,7 +303,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AguiaDeCristo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tDesign.AguiaDeCristo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -315,8 +318,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AguiaDeCristo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tDesign.AguiaDeCristo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
